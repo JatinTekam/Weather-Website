@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    /* padding: 0 200px; */
+    background-image: url("https://wallpapers.com/images/hd/chill-4k-mountain-vector-art-b8l8tewqavnq5pbl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.weather{
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+}
+.weather input{
+    font-size: 20px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.weather button{
+
+  background-color: initial;
+  /* background-image: linear-gradient(-180deg, #00d776c5, #00bd6898); */
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 26px;
+  /* line-height: 2px; */
+  outline: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  /* width: 100%; */
+  z-index: 9;
+
+}
+.inputdata{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allinfo{
+    width: 100%;
+    height: calc(100vh - 200px);
+    /* background-color: brown; */
+    padding: 0 200px;
+    
+}
+.container{
+    width: 70vw;
+    height: 300px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+}
+.container .box1{
+    width: 600px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 15px;
+    /* background-color: rebeccapurple; */
+    border-right: 1px solid white;
+}
+.container .box1 h1{
+    font-size: 40px;
+   
+}
+.container .box1 p{
+    font-size: 23px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+}
+.container .box1 .tempdata{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 20px;
+    /* background-color: beige; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .box1 .tempdata h3{
+    font-size: 70px;
+}
+.container .box2{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    /* background-color: rebeccapurple; */
+}
+.container .box2 .row1{
+    width: 50%;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container .box2 .row1 p{
+    font-size: 25px;
+}
+.container .box2 .row1 p span{
+    font-size: 35px;
+}
+.container .box2 .row2{
+    width: 50%;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container .box2 .row2 p{
+    font-size: 25px;
+}
+.container .box2 .row2 p span{
+    font-size: 35px;
+}
+.error{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allinfo .allweeks{
+    width: 91.6%;
+    height: 300px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
