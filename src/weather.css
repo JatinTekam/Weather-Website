@@ -6,162 +6,131 @@
 html,body{
     width: 100%;
     height: 100vh;
-    /* padding: 0 200px; */
     background-image: url("https://wallpapers.com/images/hd/chill-4k-mountain-vector-art-b8l8tewqavnq5pbl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
-}
-.weather{
-    width: 100%;
-    height: 200px;
-    /* background-color: aqua; */
-}
-.weather input{
-    font-size: 20px;
-    background: transparent;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid black;
-    outline: none;
-}
-
-.weather button{
-
-  background-color: initial;
-  /* background-image: linear-gradient(-180deg, #00d776c5, #00bd6898); */
-  font-size: 20px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-  color: black;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
-  height: 26px;
-  /* line-height: 2px; */
-  outline: 0;
-  overflow: hidden;
-  padding: 0 10px;
-  pointer-events: auto;
-  position: relative;
-  text-align: center;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
-  /* width: 100%; */
-  z-index: 9;
-
-}
-.inputdata{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.allinfo{
-    width: 100%;
-    height: calc(100vh - 200px);
-    /* background-color: brown; */
-    padding: 0 200px;
-    
+form{
+    width: 450px;
+    height: 700px;
+    /* background-color: white; */
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* backdrop-filter: blur(4px); */
+    /* backdrop-filter: drop-shadow(00px 15px 10px black); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.container{
-    width: 70vw;
-    height: 300px;
-    backdrop-filter: blur(5px);
-    display: flex;
-    /* background-color: aqua; */
-    justify-content: space-around;
-}
-.container .box1{
-    width: 600px;
-    height: 300px;
-    padding-top: 20px;
-    padding-left: 15px;
-    /* background-color: rebeccapurple; */
-    border-right: 1px solid white;
-}
-.container .box1 h1{
-    font-size: 40px;
-   
-}
-.container .box1 p{
-    font-size: 23px;
-    margin-top: 3px;
-    letter-spacing: 2px;
-}
-.container .box1 .tempdata{
+form .inputdata{
     width: 100%;
     height: 150px;
-    display: flex;
-    margin-top: 20px;
-    /* background-color: beige; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.container .box1 .tempdata h3{
-    font-size: 70px;
-}
-.container .box2{
-    width: 600px;
-    height: 300px;
-    display: flex;
-    /* background-color: rebeccapurple; */
-}
-.container .box2 .row1{
-    width: 50%;
-    height: 175px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 53px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.container .box2 .row1 p{
-    font-size: 25px;
-}
-.container .box2 .row1 p span{
-    font-size: 35px;
-}
-.container .box2 .row2{
-    width: 50%;
-    height: 175px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 53px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.container .box2 .row2 p{
-    font-size: 25px;
-}
-.container .box2 .row2 p span{
-    font-size: 35px;
-}
-.error{
-    width: 100%;
-    height: 100vh;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+form .inputdata input{
+    font-size: 22px;
+    padding:10px;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    border-right: none;
+}
+form .inputdata button{
+    font-size: 22px;
+    padding: 10px;
+    
+    background-color: transparent;
+    outline:  none;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
 }
 
-.allinfo .allweeks{
-    width: 91.6%;
-    height: 300px;
-    /* background-color: blueviolet; */
+form .inputdata button:hover{
+    cursor: pointer;
+}
+form .inputdata .btn{
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+form figure{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+form figure figcaption{
+    font-size: 30px;
+}
+form figure img{
+        width: 30px;
+}
+form .weathericon{
+    width: 100%;
+    height: 330px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form .weathericon img{
+    width: 250px;
+    filter: drop-shadow(0 20px 50px black);
+}
+
+form .weathericon p{
+    font-size: 20px;
+}
+form .otherdata{
+width: 100%;
+height: 182px;
+display: flex;
+padding-left: 25px;
+/* gap: 20px; */
+/* background-color: blueviolet; */
+}
+form .otherdata ul{
+    width: 50%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
     justify-content: space-around;
+    /* padding-left: 15px; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+form .otherdata ul li{
+    font-size: 16px;
+}
+form .otherdata ul li span{
+    font-size: 20px;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.light{
+    background-color: white;
+}
+.dark{
+    background-color: #22223b;
+    /* background-color: #001A38; */
+    color: white;
 }
