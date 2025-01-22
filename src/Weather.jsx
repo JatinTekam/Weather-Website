@@ -92,7 +92,7 @@ return(
       <button type="submit"><IoSearchOutline/></button>
       <div className="btn" onClick={handleNightMode}>{mode ? <IoSunny /> : <IoSunnyOutline />}</div>
       </div>
-     <Tempicon  iconTemp={apiData}/>
+     <Tempicon iconTemp={apiData}/>
       <Weathericon iconData={apiData}/>
       <div className="otherdata">
        <Allotherdata allInfo={apiData}/>

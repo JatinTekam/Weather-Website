@@ -134,3 +134,67 @@ form .otherdata ul li span{
     /* background-color: #001A38; */
     color: white;
 }
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    form{
+        width:90vw;
+        height: 700px;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    form .inputdata input{
+        font-size: 4vw;
+        padding:10px;
+        border-right: none;
+        background-color: transparent;
+        outline: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid black;
+        border-right: none;
+    }
+    form .inputdata button{
+        font-size: 4vw;
+        padding: 10px;
+        background-color: transparent;
+        outline:  none;
+        border: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+    }
+    form .inputdata button:hover{
+        cursor: pointer;
+    }
+    form figure figcaption{
+        font-size: 7vw;
+    }
+    form figure img{
+        width: 6vw;
+}
+form .weathericon img{
+    width: 50vw;
+    filter: drop-shadow(0 20px 50px black);
+}
+form .weathericon h1{
+    font-size: 7vw;
+}
+form .weathericon p{
+    font-size: 6vw;
+}
+form .otherdata ul li{
+    font-size: 3vw;
+}
+form .otherdata ul li span{
+    font-size: 4vw;
+}
+
+}
